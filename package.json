@@ -1,17 +1,15 @@
 {
-  "name": "electron-updater",
+  "name": "electron-updater-v2",
   "version": "5.0.3",
   "description": "Cross platform updater for electron applications",
   "main": "out/main.js",
-  "author": "Vladimir Krivosheev",
+  "author": "VyLQ",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-userland/electron-builder.git",
-    "directory": "packages/electron-updater"
+    "url": "git+https://github.com/vylqtopcv/electron-updater-v2.git",
+    "directory": ""
   },
-  "bugs": "https://github.com/electron-userland/electron-builder/issues",
-  "homepage": "https://github.com/electron-userland/electron-builder",
   "files": [
     "out"
   ],
