@@ -1,8 +1,4 @@
-# electron-updater-v2
-
-**Fix private github repo**
-
-**This repo is fork from electron-updater**
+# electron-updater
 
 This module allows you to automatically update your application. You only need to install this module and write two lines of code!
 To publish your updates you just need simple file hosting, it does not require a dedicated server.
