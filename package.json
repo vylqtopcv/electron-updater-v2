@@ -8,7 +8,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vylqtopcv/electron-updater-v2.git",
-    "directory": ""
+    "directory": "."
   },
   "files": [
     "out"
@@ -16,6 +16,7 @@
   "dependencies": {
     "@types/semver": "^7.3.6",
     "builder-util-runtime": "workspace:*",
+    "electron-updater-v2": "^5.0.3",
     "fs-extra": "^10.0.0",
     "js-yaml": "^4.1.0",
     "lazy-val": "^1.0.5",
