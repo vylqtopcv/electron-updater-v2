@@ -31,7 +31,7 @@ export abstract class BaseGitHubProvider<T extends UpdateInfo> extends Provider<
   protected computeGithubBasePath(result: string): string {
     // https://github.com/electron-userland/electron-builder/issues/1903#issuecomment-320881211
     const host = this.options.host
-    return host && result;
+    return host ? result : result;
   }
 }
 
@@ -96,7 +96,7 @@ export class GitHubProvider extends BaseGitHubProvider<GithubUpdateInfo> {
           }
         }
       }
-    } catch (e) {
+    } catch (e: any) {
       throw newError(`Cannot parse releases feed: ${e.stack || e.message},\nXML:\n${feedXml}`, "ERR_UPDATER_INVALID_RELEASE_FEED")
     }
 
@@ -162,7 +162,7 @@ export class GitHubProvider extends BaseGitHubProvider<GithubUpdateInfo> {
 
       const releaseInfo: GithubReleaseInfo = JSON.parse(rawData)
       return releaseInfo.tag_name
-    } catch (e) {
+    } catch (e: any) {
       throw newError(`Unable to find latest version on GitHub (${url}), please ensure a production release exists: ${e.stack || e.message}`, "ERR_UPDATER_LATEST_VERSION_NOT_FOUND")
     }
   }
